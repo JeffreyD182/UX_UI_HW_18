@@ -1,0 +1,215 @@
+
+body {
+    font-family: aileron, sans-serif;
+    color: #171717;
+    margin: 0;
+}
+
+p {
+    font-family: open-sans, sans-serif;
+    font-size: 20px;
+}
+
+.nav {
+    /* border: 1px solid red; */
+    margin-top: 25px;
+}
+
+.logo {
+    /* border: 1px solid red; */
+    width: 400px;
+    display: inline-block;
+}
+
+.topNavLinks {
+    margin-right: 50px;
+    float: right;
+    list-style-type: none;
+}
+
+.inline_block {
+    margin: 20px;
+    padding-bottom: 5px;
+    /* border: 1px solid red; */
+    display: inline-block;
+    display: inline-block;
+    position: relative;
+    color: #171717;
+}
+
+.inline_block:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #171717;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease;
+}
+
+.inline_block:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.inline_block a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #171717;
+}
+
+
+.hero {
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.description {
+    font-family: open-sans,sans-serif;
+    font-size: 18px;
+    color: #757575;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+.work {
+    margin-top: 100px;
+}
+
+.portfolioImage {
+    margin: 0;
+    max-width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    transition: .5s ease;
+}
+
+.portfolioImage:hover {
+    opacity: 0.5;
+}
+
+
+.portfolioImage a {
+    display: inline-block;
+}
+
+.about {
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    padding: 75px 175px 75px 175px;
+    width: 1350px;
+    height: 520px;
+}
+
+
+.profile {
+    float: left;
+    height: 520px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.aboutText {
+    /* border: 1px solid red; */
+    padding: 25px;
+}
+
+.aboutHeader {
+    /* border: 1px solid red; */
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.aboutParagraph {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #757575;
+}
+
+.resume {
+    border-style: none;
+    margin-top: 10px;
+    width: 284px;
+    height: 56px;
+    padding: 15px;
+    background-color: #171717;
+    color: white;
+    font-family: aileron, sans-serif;
+    font-size: 20px;
+    box-shadow: inset 0 0 0 0 #4F84FF;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
+}
+
+.resume:hover {
+    border-style: none;
+    box-shadow: inset 400px 0 0 0 #4F84FF;
+    color: white;
+    cursor: pointer;
+}
+
+.skills{
+    margin: 0px auto;
+    width: 1350px;
+    height: 890px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "uxui tools"
+    "graphicDesign softSkills";
+}
+
+
+.skillList {
+    font-family: open-sans,sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #757575;
+}
+
+.uxui, .tools, .graphicDesign, .softSkills {
+    padding: 35px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    border-radius: 7px;
+    width: 580px;
+    height: 345px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    padding: 50px;
+}
+
+footer ul {
+    padding-left: 0px;
+    /* border: 1px solid red; */
+    list-style-type: none;
+}
+
+.footerIcon {
+    /* border: 1px solid red; */
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+}
+
+.finePrint {
+    margin-bottom: 0px;
+    font-size: 14px;
+}
