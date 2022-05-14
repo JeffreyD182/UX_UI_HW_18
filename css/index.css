@@ -21,61 +21,19 @@ h2 {
     font-size: 48px;
 }
 
+@media screen and (max-width:375px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+}
+
 /* Navigation Style */
-
-
-.nav {
-    /* border: 1px solid red; */
-    margin-top: 25px;
-}
-
-.logo {
-    /* border: 1px solid red; */
-    width: 400px;
-    display: inline-block;
-}
-
-.topNavLinks {
-    margin-right: 50px;
-    float: right;
-    list-style-type: none;
-}
-
-.inline_block {
-    margin: 20px;
-    padding-bottom: 5px;
-    /* border: 1px solid red; */
-    display: inline-block;
-    display: inline-block;
-    position: relative;
-    color: #171717;
-}
-
-.inline_block:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #171717;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease;
-}
-
-.inline_block:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.inline_block a {
-    font-weight: 600;
-    text-decoration: none;
-    color: #171717;
-}
-
-/* Hero style */
 
 
 .hero {
@@ -83,8 +41,12 @@ h2 {
     /* border: 1px solid red; */
 }
 
-.description {
-    font-family: open-sans,sans-serif;
+@media screen and (max-width:375px) {
+    .hero {
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 15px;
+    }
 }
 
 /* Portfolio Showcase Hompage */
@@ -107,9 +69,71 @@ h2 {
     opacity: 0.5;
 }
 
-
 .portfolioImage a {
-    display: inline-block;
+    display: block;
+}
+
+#tripperDesktop {
+    display: block;
+}
+
+#tripperMobile {
+    display: none;
+}
+
+#spectrumDesktop {
+    display: block;
+}
+
+#spectrumMobile {
+    display: none;
+}
+
+#craDesktop {
+    display: block;
+}
+
+#craMobile {
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+
+    .work {
+        margin-top: 10px;
+    }
+
+    .portfolioImage {
+        width: 372px;
+        height: 350px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #tripperDesktop {
+        display: none;
+    }
+
+    #tripperMobile {
+
+        display: block;
+    }
+
+    #spectrumDesktop {
+        display: none;
+    }
+
+    #spectrumMobile {
+        display: block;
+    }
+
+    #craDesktop {
+        display: none;
+    }
+
+    #craMobile {
+        display: block;
+    }
 }
 
 /* Footer Style */
