@@ -35,6 +35,118 @@ h2 {
 
 /* Navigation Style */
 
+* {
+    margin: 2;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 400px;
+    margin-left: -50px;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    flex-wrap: wrap;
+    font-family: aileron, sans-serif;
+
+    margin: 25px 0px 25px 0px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-right: -10px;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #171717;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav .menu-btn i {
+    color: #171717;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media (max-width: 375px) {
+
+    nav {
+        margin: 0px;
+    }
+
+    nav .menu-btn i {
+        margin-right: -15px;
+        display: block;
+    }
+
+    .logo {
+        padding: 0px;
+        width: 250px;
+        margin-left: -50px;
+    }
+
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+
+    nav ul {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background: #ffffff;
+        height: 100vh;
+        width: 100%;
+        text-align: left;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked~ul {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 20px 20px;
+    }
+
+    nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, 0.265, 1.55);
+    }
+
+    #click:checked~ul li a {
+        margin-left: 0px;
+    }
+}
+
+/* Hero Banner */
+
 
 .hero {
     text-align: center;
@@ -42,8 +154,8 @@ h2 {
 }
 
 @media screen and (max-width:375px) {
+
     .hero {
-        margin: 0 auto;
         max-width: 100%;
         padding: 15px;
     }
@@ -99,8 +211,9 @@ h2 {
 
 @media screen and (max-width: 375px) {
 
+
     .work {
-        margin-top: 10px;
+        margin-top: 25px;
     }
 
     .portfolioImage {
@@ -108,6 +221,7 @@ h2 {
         height: 350px;
         background-size: cover;
         background-repeat: no-repeat;
+        margin: 0px;
     }
 
     #tripperDesktop {
@@ -160,4 +274,25 @@ footer ul {
 .finePrint {
     margin-bottom: 0px;
     font-size: 14px;
+}
+
+@media screen and (max-width:375px) {
+    footer {
+        margin-top: 10px;
+        padding: 15px;
+    }
+
+    .footerIcon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .footerIcon img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .finePrint {
+        margin-bottom: 15px;
+    }
 }
