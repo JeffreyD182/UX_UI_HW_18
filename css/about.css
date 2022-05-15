@@ -117,8 +117,8 @@
     }
 
     .about img {
-        margin-left: 25px;
-        width: 325px;
+        margin-left: 45px;
+        width: 90%;
         height: auto;
     }
 
@@ -156,9 +156,9 @@
     .tools,
     .graphicDesign,
     .softSkills {
-        margin: 10px;
-        width: 88%;
-        height: fit-content;
+        margin: 10px auto 10px auto;
+        width: 80%;
+        height: auto;
     }
 }
 
@@ -191,9 +191,9 @@
     .tools,
     .graphicDesign,
     .softSkills {
-        width: 75%;
-        margin: 10px;
-        height: fit-content;
+        width: 70%;
+        margin: 10px auto 10px auto;
+        height: auto;
     }
 
     .skills {
